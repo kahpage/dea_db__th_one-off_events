@@ -193,15 +193,20 @@ if __name__ == "__main__":
             # Medium("", [Source("", (RT.Reliable, OT.Official))]),
         ]
         locations = [
-            # Location(
-            #     coordinates=(,),
-            #     address="",
-            #     description="",
-            #     sources=[Source("", (ReliabilityTypes.Reliable, OriginTypes.Official))],
-            #     # comments=None,
-            #     imageUrl="",
-            #     url="",
-            # ),
+            Location(
+                coordinates=(35.3139509, 136.2813635),
+                address="2 Chome-137 Shimotara, Maibara, Shiga 521-0016, Japan",
+                description="滋賀県立文化産業交流会館　大ホール",
+                sources=[
+                    Source(
+                        "http://web.archive.org/web/20100908094512fw_/http://www.taiga-s.co.jp/rhs/maicomi/009.html",
+                        (ReliabilityTypes.Reliable, OriginTypes.Official),
+                    )
+                ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SwxYrFGS9nGVCprunaMscMx9TTm6u1Dgou4lK86jbBwxgHWZUtu_q8BrPkX0fzBm4t1VRZ9l_XsZE42qJDnr2lQm11Qgtkqc1jAvhjy211oQ9VTqP9FSrv4OqtuZSu1j39rSdr=s0?imgmax=0",
+                url="https://maps.app.goo.gl/eTo8g8LyekY7ibgu6",
+            ),
         ]
         event = Event(
             links=[
@@ -226,7 +231,7 @@ if __name__ == "__main__":
             locations=locations,
             description=None,
             comments="Simultaneous with まいこみ東方祭.",
-            last_edited="2026.10.13",
+            last_edited="2026.10.29",
         )
 
         # Retrieve circles
