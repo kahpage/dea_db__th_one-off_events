@@ -113,9 +113,9 @@ if __name__ == "__main__":
             ),
         ]
         event = Event(
-            links=["http://www.taiga-s.co.jp/rhs/maicomi/index.html"],
             aliases=["まいこみ東方祭", "Maikomi Touhou Sai"],
             dates="2010.09.19",
+            links=["http://www.taiga-s.co.jp/rhs/maicomi/index.html"],
             circles=[],
             media=media_,
             sources=[
@@ -209,13 +209,13 @@ if __name__ == "__main__":
             ),
         ]
         event = Event(
+            aliases=["まいばらこみゅにけっと2010", "Maibara Communiket 2010", "mmc"],
+            dates="2010.09.19",
+            circles=[],
             links=[
                 "http://www.taiga-s.co.jp/rhs/maicomi/index.html",
                 "http://u-go.to/mmc/",
             ],
-            aliases=["まいばらこみゅにけっと2010", "Maibara Communiket 2010", "mmc"],
-            dates="2010.09.19",
-            circles=[],
             media=media_,
             sources=[
                 Source(
@@ -277,16 +277,13 @@ if __name__ == "__main__":
     #     events.append(event)
 
     # ==== event group ====
-    media = []
-    links = []
-
     event_group = EventGroup(
         aliases=[
             "One-off Touhou Project events",
         ],
         events=events,
-        media=media,
-        links=links,
+        media=[],
+        links=[],
         sources=[],
         comments=None,
         description="Collection of one-off events with Touhou Project themes.",
